@@ -1,0 +1,25 @@
+@import "tailwindcss"; /* Tailwind v4 base */
+
+/* Load daisyUI as a plugin (v5 way - this enables bg-secondary, etc.) */
+@plugin "daisyui";
+
+/* Your Udemy custom styles (keep these below - they use @apply safely) */
+.rating-star {
+  color: #b4690e;
+}
+
+.bestseller-badge {
+  @apply bg-secondary text-secondary-content text-xs font-bold px-2 py-1 rounded;
+}
+
+.price-current {
+  @apply text-2xl font-bold text-neutral;
+}
+
+.price-original {
+  @apply line-through text-gray-500 ml-2;
+}
+
+.price-discount {
+  @apply text-accent font-bold;
+}
