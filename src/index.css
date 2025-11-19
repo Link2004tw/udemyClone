@@ -1,9 +1,6 @@
-@import "tailwindcss"; /* Tailwind v4 base */
-
-/* Load daisyUI as a plugin (v5 way - this enables bg-secondary, etc.) */
+@import "tailwindcss";
 @plugin "daisyui";
 
-/* Your Udemy custom styles (keep these below - they use @apply safely) */
 .rating-star {
   color: #b4690e;
 }

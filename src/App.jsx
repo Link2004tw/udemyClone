@@ -1,9 +1,6 @@
-import { useState } from "react";
 import "./App.css";
 import Navbar from "./components/NavBar";
 import CourseCard from "./components/course/CourseCard";
-import PrimaryButton from "./components/PrimaryButton";
-import { getTodosAxios } from "./utils/apis";
 
 const dummyCourses = [
   {
