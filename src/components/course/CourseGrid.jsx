@@ -1,4 +1,3 @@
-// components/CourseGrid.tsx
 import CourseCard from "./CourseCard";
 
 const courses = [

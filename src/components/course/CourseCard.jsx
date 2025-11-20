@@ -16,7 +16,6 @@ export default function CourseCard({
 
   return (
     <div className="card bg-base-100 shadow hover:shadow-xl transition-all duration-300 cursor-pointer group w-full max-w-sm">
-      {/* Course Thumbnail */}
       <figure className="relative overflow-hidden">
         <img
           src={image}
@@ -31,28 +30,22 @@ export default function CourseCard({
       </figure>
 
       <div className="card-body p-5 gap-2">
-        {/* Course Title */}
         <h3 className="card-title text-base font-bold line-clamp-2 group-hover:text-[#a435f0] transition-colors">
           {title}
         </h3>
 
-        {/* Instructor */}
         <p className="text-sm text-base-content/70">{instructor}</p>
 
-        {/* Rating + Reviews */}
         <div className="flex items-center gap-2">
           <span className="text-sm font-bold text-amber-600">{rating}</span>
 
           <div className="flex items-center">
-            {/* Full Stars */}
             {[...Array(fullStars)].map((_, i) => (
               <span key={i} className="text-amber-500 text-sm">
                 ★
               </span>
             ))}
-            {/* Half Star */}
             {hasHalfStar && <span className="text-amber-500 text-sm">½</span>}
-            {/* Empty Stars */}
             {[...Array(5 - Math.ceil(rating))].map((_, i) => (
               <span key={i + fullStars + 1} className="text-gray-300 text-sm">
                 ★
@@ -65,7 +58,6 @@ export default function CourseCard({
           </span>
         </div>
 
-        {/* Duration + Lectures + Level */}
         <div className="text-xs text-base-content/60 space-y-1">
           <span>{hours} total hours</span>
           <span className="mx-2">•</span>
@@ -74,7 +66,6 @@ export default function CourseCard({
           <span>{level}</span>
         </div>
 
-        {/* Price */}
         <div className="flex items-center gap-2 mt-2">
           <span className="text-2xl font-bold">${price}</span>
           {originalPrice > price && (

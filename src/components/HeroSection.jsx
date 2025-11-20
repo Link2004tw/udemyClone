@@ -41,7 +41,6 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* Floating blobs */}
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-500 rounded-full filter blur-3xl opacity-30 translate-x-32 translate-y-32" />
       <div className="absolute top-20 left-0 w-80 h-80 bg-blue-500 rounded-full filter blur-3xl opacity-30 -translate-x-40" />
     </div>

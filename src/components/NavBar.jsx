@@ -1,8 +1,6 @@
-// components/Navbar.tsx
 import { useState } from "react";
 import { Search, Menu, Globe } from "lucide-react";
-import PrimaryButton from "./PrimaryButton"; // your existing purple button
-
+import PrimaryButton from "./PrimaryButton";
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
